@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="csrf-token" content="KzGHtRAnSVe0NsWHLJ3OFiUyHrbtGr8tMJDx9TVA">
+    <meta name="author" content="">
+    <title>Unified Portal For AICTE</title>
+    <link rel="icon" href="C:\Users\mishr\Downloads\UPFA\favicon.ico" type="image/png" sizes="16x16">
+    <!-- CSS-->
+    <!--<link type="text/css" rel="stylesheet"  href="https://www.sih.gov.in/lib/bootstrap-3.3.7/css/bootstrap.min.css"/>-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet"
+        type="text/css">
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+
+    <link href="https://www.sih.gov.in/css/mobile-menu.css" rel="stylesheet" type="text/css">
+    <link href="https://www.sih.gov.in/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://www.sih.gov.in/css/bootstrap-select.css" rel="stylesheet" type="text/css">
+    <link href="https://www.sih.gov.in/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://www.sih.gov.in/css/slick-test.css" rel="stylesheet" type="text/css">
+    <link href="https://www.sih.gov.in/css/style_new_test.css" rel="stylesheet" type="text/css">
+    <link href="https://www.sih.gov.in/css/responsiveTest.css" rel="stylesheet" type="text/css">
+    <link href="https://www.sih.gov.in/css/animate.css" rel="stylesheet" type="text/css">
+    <link href="https://www.sih.gov.in/css/bs_leftnavi.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
+    <!-- JS-->
+    <!-- <script src="https://www.sih.gov.in/lib/jquery-3.0.0.min.js" type="text/javascript"></script> -->
+    <!-- <link href="https://www.sih.gov.in/dataTable/css/jquery.dataTables.css" rel="stylesheet" />
+        <script src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script> -->
+    <script src="https://www.sih.gov.in/lib/bootstrap-3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src=" https://www.sih.gov.in/js/typeahead.js"></script>
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SFBJN4W5W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2SFBJN4W5W');
+    </script>
+
+</head>
+
+<body>
+
+    <div class="d-none d-sm-block">
+        <div class="header bg-light py-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-6">
+                        <nav class=""><a class="navbar-brand" href="https://sih.gov.in/"><span><img
+                                        src="C:\Users\mishr\Downloads\UPFA\Logo.png" class="img-responsive"></span></a>
+                        </nav>
+                    </div>
+                    <div class="col-6 col-md-8 col-lg-6 text-right">
+                        <nav class="navbar navbar-expand-md topNavbar">
+                            <ul class="navbar-nav ml-auto">
+                                <!--li class="nav-item">
+                  <a class="nav-link alumniButTop" href="https://alumni.mic.gov.in/" target="_blank">MIC Alumni</a>
+                </li-->
+
+                                <li class="nav-item">
+                                    <a class="nav-link alumniButTop alumnilogin" href="/signin"
+                                        style="padding:7px 15px 4px 15px !important;display: flex;justify-content: center;align-items: center;">
+                                        Login
+                                        <img style="height:25px;width:25px;margin: 0px 0px 0 5px;border-radius: 25px;"
+                                            src="https://www.sih.gov.in/img1/login.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-md navbar-dark" id="banner">
+            <a id="lastLogo" class="navbar-brand" href="https://sih.gov.in/">
+                <span>
+                    <img id="scrollLogo" src="C:\Users\mishr\Downloads\UPFA\Logo.png" class="img-fluid" alt="logo">
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav text-center">
+
+                    <!--li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Guidelines
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">                        
+            <div class="container">
+              <div class="row">
+                <ul class="nav nav-tabs navTabs" id="myTab2" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#guideLine1" role="tab" aria-controls="disSIH1">Guidelines</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#guideLine2" role="tab" aria-controls="disSIH2">Idea Template</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#guideLine3" role="tab" aria-controls="disSIH3">How to apply</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#guideLine4" role="tab" aria-controls="disSIH3">Internal Hackathon</a>
+                  </li>
+                  
+                   
+                </ul>
+                <div class="tab-content tabContentMenu">
+                    <div class="tab-pane active" id="guideLine1" role="tabpanel">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <ul class="pastEventList">
+                                      <li><a target="_BLANK" href="https://www.sih.gov.in/letters/Guidelines-College-SPOC.pdf"> For College</a></li>
+                                      <li><a target="_BLANK" href="https://www.sih.gov.in/letters/Guidelines-School-SPOC.pdf"> For School</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  <div class="tab-pane" id="guideLine2" role="tabpanel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="pastEventList">
+                                    <li><a target="_BLANK" href="https://www.sih.gov.in/letters/Idea-Presentation-Format-SIH2023-College.pptx">College PPT</a></li>
+                                    <li><a target="_BLANK" href="https://www.sih.gov.in/letters/Idea-Presentation-Format-SIH2023-School.pptx"> School PPT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="guideLine3" role="tabpanel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="pastEventList">
+                                    <li><a target="_BLANK" href="https://www.sih.gov.in/letters/Guidelines-how-to-apply-college.pdf">How to apply as College SPOC</a></li>
+                                    <li><a target="_BLANK" href="https://www.sih.gov.in/letters/Guidelines-how-to-apply-school.pdf">How to apply as School SPOC</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="guideLine4" role="tabpanel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="pastEventList">
+                                    <li><a target="_BLANK" href="https://www.sih.gov.in/letters/nc_internal_hackathon_guidelines.zip">NC Internal Hackathon Guidelines</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+          </div>
+        </li-->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="C:\Users\mishr\Downloads\UPFA\about.html" id="">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="C:\Users\mishr\Downloads\UPFA\latestcurriculum.html" id="">Latest
+                            Curriculum</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="C:\Users\mishr\Downloads\UPFA\resourcerepo.html" id="">Resource
+                            Repository</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="C:\Users\mishr\Downloads\UPFA\initiatives.html" id="">Initiatives</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="C:\Users\mishr\Downloads\UPFA\schemes.html" id="">Schemes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="C:\Users\mishr\Downloads\UPFA\gallary.html" id="">Gallary</a>
+                    </li>
+
+                    <!--li class="nav-item" style="display:none;">
+            <a class="nav-link" href="https://mic.gov.in/hackathon" target="_BLANK">Gallary</a>
+        </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Result</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="container">
+                <div class="row">
+                  <ul class="nav nav-tabs navTabs" id="myTab2" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#preScreeningResult" role="tab" aria-controls="faqSIH1">SIH 2022 Finale Results</a>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content tabContentMenu">
+                    <div class="tab-pane active" id="preScreeningResult" role="tabpanel">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <ul class="pastEventList">
+                              <li><a href="https://www.sih.gov.in/pdf/SIH-SOFTWARE-RESULT.pdf"> SIH Senior Software</a></li>
+                              <li><a href="https://www.sih.gov.in/pdf/past_events/hardware_2022.pdf"> SIH Senior Hardware</a></li>
+                              <li><a href="https://www.sih.gov.in/sih-2022-junior-edition-final-result"> SIH Junior</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+        </li-->
+                    <!--li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="container">
+                <div class="row">
+                  <ul class="nav nav-tabs navTabs" id="myTab2" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#faqSIH1" role="tab" aria-controls="faqSIH1">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#contactSIH2" role="tab" aria-controls="contactSIH2">Reach Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#knowYourSPOC" role="tab" aria-controls="contactSIH2">Know Your SPOC</a>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content tabContentMenu">
+                    <div class="tab-pane active" id="faqSIH1" role="tabpanel">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <ul class="pastEventList">
+                              <li><a href="https://www.sih.gov.in/faqs#college-spoc"> For College SPOC</a></li>
+                              <li><a href="https://www.sih.gov.in/faqs#team"> For Team</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="tab-pane" id="contactSIH2" role="tabpanel">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <ul class="pastEventList">
+                              <li><a href="https://www.sih.gov.in/contactUs"> Contact us</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="knowYourSPOC" role="tabpanel">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <ul class="pastEventList">
+                              <li><a href="https://www.sih.gov.in/know-your-spoc"> SPOC Details</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </li-->
+                    <li class="nav-item-mobile" id="scrollnav">
+                        <a class="nav-link-mobile onScrollButton" href="/signin" style="">
+                            Login <img src="https://www.sih.gov.in/img1/login.png" alt="">
+                        </a>
+                    </li>
+
+
+                </ul>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Desktop Menu End  -->
+
+    <!-- Mobile Menu Start  -->
+    <div class="d-block d-sm-none">
+        <header class="nav-top">
+            <a class="navbar-brand" href="https://www.sih.gov.in/"><span><img
+                        src="C:\Users\mishr\Downloads\UPFA\Logo.png" class="img-responsive"></span></a>
+            <span class="hamburger material-icons" id="ham">menu</span>
+        </header>
+
+        <nav class="nav-drill">
+            <ul class="nav-items nav-level-1">
+                <!--li class="nav-item-mobile nav-expand">
+			<a class="nav-link-mobile nav-expand-link" href="#">
+				Discover about SIH
+			</a>
+			<ul class="nav-items nav-expand-content">
+				<li class="nav-item-mobile nav-expand">
+					<a class="nav-link-mobile nav-expand-link" href="#">
+						SIH 2023
+					</a>
+					<ul class="nav-items nav-expand-content">
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://www.sih.gov.in/sih2023">
+								 About SIH 2023
+							</a>
+						</li-->
+                <!-- <li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://www.sih.gov.in/organisingCommittee">
+								 About Us
+							</a>
+						</li> -->
+                <li class="nav-item-mobile">
+                    <a class="nav-link-mobile" href="https://www.sih.gov.in/sih2023#sih-process-flow">
+                        SIH 2023 Process Flow
+                    </a>
+                </li>
+                <li class="nav-item-mobile">
+
+                    <a class="nav-link-mobile" href="https://www.sih.gov.in/SIH2023Themes">
+                        SIH 2023 Themes
+                    </a>
+                </li>
+                <li class="nav-item-mobile">
+                    <a class="nav-link-mobile" href="https://www.sih.gov.in/sih2023PS">
+                        Problem Statements
+                    </a>
+                </li>
+            </ul>
+            </li>
+            <li class="nav-item-mobile nav-expand">
+                <a class="nav-link-mobile nav-expand-link" href="#">
+                    Past Events
+                </a>
+                <ul class="nav-items nav-expand-content">
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="https://www.sih.gov.in/sih2017">
+                            SIH 2017
+                        </a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="https://www.sih.gov.in/sih2018Software">
+                            SIH 2018 Software
+                        </a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="https://www.sih.gov.in/sih2018Hardware">
+                            SIH 2018 Hardware
+                        </a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="https://www.sih.gov.in/sih2019">
+                            SIH 2019 Software
+                        </a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="https://www.sih.gov.in/sih2019Hard">
+                            SIH 2019 Hardware
+                        </a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="https://www.sih.gov.in/sih2020Software">
+                            SIH 2020 Software
+                        </a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="https://www.sih.gov.in/sih2020Hardware">
+                            SIH 2020 Hardware
+                        </a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="https://www.sih.gov.in/sih2022s">
+                            SIH 2022
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://www.sih.gov.in/sih2022Hardware">
+								  SIH 2022 Hardware
+							</a>
+						</li> -->
+                </ul>
+            </li>
+
+            </ul>
+            </li>
+            <li class="nav-item-mobile nav-expand">
+                <a class="nav-link-mobile nav-expand-link" href="#">
+                    Guidelines
+                </a>
+
+                <ul class="nav-items nav-expand-content">
+
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile"
+                            href="https://www.sih.gov.in/letters/Guidelines-how-to-apply-college.pdf">
+                            How to apply as College SPOC
+                        </a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile"
+                            href="https://www.sih.gov.in/letters/Guidelines-how-to-apply-school.pdf">
+                            How to apply as School SPOC
+                        </a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="https://www.sih.gov.in/letters/Guidelines-College-SPOC.pdf">
+                            Guidelines for College
+                        </a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="https://www.sih.gov.in/letters/Guidelines-School-SPOC.pdf">
+                            Guidelines for School
+                        </a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile"
+                            href="https://www.sih.gov.in/letters/Idea-Presentation-Format-SIH2023-College.pptx">
+                            Idea Presentation College PPT
+                        </a>
+                    </li>
+
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile"
+                            href="https://www.sih.gov.in/letters/Idea-Presentation-Format-SIH2023-School.pptx">
+                            Idea Presentation School PPT
+                        </a>
+                    </li>
+
+                    <a class="nav-link-mobile"
+                        href="https://www.sih.gov.in/letters/nc_internal_hackathon_guidelines.zip">
+                        Internal Hackathon
+                    </a>
+
+                </ul>
+            </li>
+            <li class="nav-item-mobile">
+                <a class="nav-link-mobile" href="https://www.sih.gov.in/implementationTeam" target="_BLANK">
+                    Implementation Team
+                </a>
+            </li>
+
+            <li class="nav-item-mobile nav-expand">
+                <a class="nav-link-mobile nav-expand-link" href="#">
+                    SIH2022 Results
+                </a>
+
+                <ul class="nav-items nav-expand-content">
+
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="https://www.sih.gov.in/pdf/SIH-SOFTWARE-RESULT.pdf">
+                            SIH Senior Software
+                        </a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="https://www.sih.gov.in/pdf/past_events/hardware_2022.pdf">
+                            SIH Senior Hardware
+                        </a>
+                    </li>
+                    <li class="nav-item-mobile">
+                        <a class="nav-link-mobile" href="https://www.sih.gov.in/sih-2022-junior-edition-final-result">
+                            SIH Junior
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://www.sih.gov.in/letters/Guidelines-School-SPOC.pdf">
+								 Guidelines for School
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://www.sih.gov.in/letters/Idea-Presentation-Format-SIH2023-College.pptx">
+								 Idea Presentation College PPT
+							</a>
+						</li>
+						
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://www.sih.gov.in/letters/Idea-Presentation-Format-SIH2023-School.pptx">
+								 Idea Presentation School PPT
+							</a>
+						</li> -->
+
+                </ul>
+            </li>
+
+            <!-- <li class="nav-item-mobile">
+			<a class="nav-link-mobile" href="https://mic.gov.in/hackathon" target="_BLANK">
+				International Hackathon
+			</a>
+		</li>		 -->
+            <!-- <li class="nav-item-mobile nav-expand">
+			<a class="nav-link-mobile nav-expand-link" href="#">
+				Partner/Challenger
+			</a>
+			<ul class="nav-items nav-expand-content">
+				<li class="nav-item-mobile nav-expand">
+					<a class="nav-link-mobile nav-expand-link" href="#">
+						Partner
+					</a>
+					<ul class="nav-items nav-expand-content">
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://www.sih.gov.in/partner">
+								   Partners/Sponsors
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://www.sih.gov.in/challenger">
+								   Challengers
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item-mobile nav-expand">
+					<a class="nav-link-mobile nav-expand-link" href="#">
+						Challenger
+					</a>
+					<ul class="nav-items nav-expand-content">
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://www.sih.gov.in/partner">
+								    Partners/Sponsors
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://www.sih.gov.in/challenger">
+								   Challengers
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li> -->
+
+            <li class="nav-item-mobile nav-expand">
+                <a class="nav-link-mobile nav-expand-link" href="#">
+                    Support
+                </a>
+                <ul class="nav-items nav-expand-content">
+                    <li class="nav-item-mobile nav-expand">
+                        <a class="nav-link-mobile nav-expand-link" href="#">
+                            FAQs
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item-mobile">
+                                <a class="nav-link-mobile" href="https://www.sih.gov.in/faqs#college-spoc">
+                                    For College SPOC
+                                </a>
+                            </li>
+                            <li class="nav-item-mobile">
+                                <a class="nav-link-mobile" href="https://www.sih.gov.in/faqs#team">
+                                    For Team
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item-mobile nav-expand">
+                        <a class="nav-link-mobile nav-expand-link" href="#">
+                            Reach Us
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item-mobile">
+                                <a class="nav-link-mobile" href="https://www.sih.gov.in/contactUs">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="nav-item-mobile">
+                <a class="nav-link-mobile" href="https://www.sih.gov.in/know-your-spoc" target="_BLANK">
+                    Know Your SPOC
+                </a>
+            </li>
+
+            <li class="nav-item-mobile">
+                <a class="nav-link-mobile" href="/signin">
+                    <img src="https://www.sih.gov.in/img1/login.png" alt=""> Login/Register
+                </a>
+            </li>
+            </ul>
+
+        </nav>
+    </div>
+
+
+
+
+    <style>
+        .center {
+            margin: auto;
+            width: 46%;
+
+            margin-top: 20px
+        }
+
+        .social h {
+            color: orange;
+
+        }
+    </style>
+
+
+    <div id="demo" class="carousel slide slider-padding" data-ride="carousel" style="">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <!-- <li data-target="#demo" data-slide-to="4"></li> -->
+            <!-- <li data-target="#demo" data-slide-to="5"></li> 
+    <li data-target="#demo" data-slide-to="6"></li> 
+    <li data-target="#demo" data-slide-to="7"></li> 
+    <li data-target="#demo" data-slide-to="8"></li> 
+    <li data-target="#demo" data-slide-to="9"></li> 
+	<li data-target="#demo" data-slide-to="10"></li> 
+	<li data-target="#demo" data-slide-to="11"></li>  -->
+            <!-- <li data-target="#demo" data-slide-to="6"></li> -->
+            <!-- <li data-target="#demo" data-slide-to="7"></li> -->
+            <!-- <li data-target="#demo" data-slide-to="6"></li> -->
+            <!-- <li data-target="#demo" data-slide-to="8"></li> -->
+            <!-- <li data-target="#demo" data-slide-to="3"></li>
+	<li data-target="#demo" data-slide-to="4"></li>
+	<li data-target="#demo" data-slide-to="5"></li>
+	<li data-target="#demo" data-slide-to="6"></li> -->
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <!--         <div class="carousel-item active">
+          <img src="https://www.sih.gov.in/slider_img/bannerSIH2019120200603014639.png" alt="Slide One" width="1100" height="500">
+        </div>
+            <div class="carousel-item active">
+          <img src="https://www.sih.gov.in/slider_img/SIH-slider-banner220211012180219.jpg" alt="Slide One" width="1100" height="500">
+        </div>
+            <div class="carousel-item active">
+          <img src="https://www.sih.gov.in/slider_img/SIH-slider-banner320211012180230.jpg" alt="Slide One" width="1100" height="500">
+        </div>
+            <div class="carousel-item active">
+          <img src="https://www.sih.gov.in/slider_img/SIH-slider-banner520211012180238.jpg" alt="Slide One" width="1100" height="500">
+        </div>
+     -->
+
+            <!-- <div class="carousel-item active">
+     <a href="http://awssih.com/" target="_blank"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM21.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div> -->
+
+            <!-- <div class="carousel-item active">
+     <a href="https://sih.gov.in/sih2022-prescreening-result" target="_blank"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM24.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div> 
+	
+	
+	<div class="carousel-item active">
+     <a href="https://youtu.be/MiGbRrGH904" target="_BLANK"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM34.jpg" alt="Slide One" class="img-fluid"> </a>
+    </div> 
+	
+	-->
+            <div class="carousel-item active">
+                <a href="/sih2023PS"> <img src="C:\Users\mishr\Downloads\UPFA\1.png" alt="Slide One" class="img-fluid">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="/sih2023PS"> <img src="C:\Users\mishr\Downloads\UPFA\2.png" alt="Slide One" class="img-fluid">
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="/signin"> <img src="C:\Users\mishr\Downloads\UPFA\3.jpg" alt="Slide One" class="img-fluid">
+                </a>
+            </div>
+            <!-- <div class="carousel-item">
+     <a href="http://bit.ly/SIH23EVAL"> <img src="https://www.sih.gov.in/img1/slider/join-as-evaluator.png" alt="Slide One" class="img-fluid"> </a>
+    </div> -->
+            <div class="carousel-item">
+                <a href="#"> <img src="C:\Users\mishr\Downloads\UPFA\4.jpeg" alt="Slide One" class="img-fluid"> </a>
+            </div>
+
+            <!-- <div class="carousel-item">
+     <a href="https://sih.gov.in/sih-2022-junior-edition-final-result"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM35.jpg" alt="Slide One" class="img-fluid"> </a>
+    </div>
+	
+	<div class="carousel-item">
+     <a href="https://sih.gov.in/SIH-Shell/index.html" target="_BLANK"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM33.jpg" alt="Slide One" class="img-fluid"> </a>
+    </div>
+	
+	<div class="carousel-item">
+     <a href="javascript:void(0);"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM32.jpg" alt="Slide One" class="img-fluid"> </a>
+    </div>
+	
+	<div class="carousel-item">
+     <a href="https://sih.gov.in/shortlisted-nodel-centres"> <img src="https://www.sih.gov.in/img/sliderbannerM30.jpg" alt="Slide One" class="img-fluid"> </a>
+    </div>
+	
+	<div class="carousel-item">
+     <a href="javascript:void(0);"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM29.jpg" alt="Slide One"> </a>
+    </div>
+	
+	<div class="carousel-item">
+     <a href="https://sih.gov.in/sih2022-prescreening-result" target="_blank"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM28.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div>
+	
+	 <div class="carousel-item">
+     <a href="https://sih.gov.in/sih2022-prescreening-result-Jr" target="_blank"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM26.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div>  -->
+
+            <!-- <div class="carousel-item">
+     <a href="http://awssih.com/" target="_blank"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM23.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div> -->
+
+            <!-- <div class="carousel-item">
+     <a href="http://awssih.com/" target="_blank"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM22.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div> -->
+
+            <!-- <div class="carousel-item">
+     <a href="http://awssih.com/" target="_blank"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM20.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div> -->
+
+            <!-- <div class="carousel-item">
+     <a href="https://www.sih.gov.in/signin"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM18.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div> -->
+
+            <!-- <div class="carousel-item">
+     <a href="https://www.sih.gov.in/signin"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM17.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div> -->
+
+            <!-- <div class="carousel-item">
+     <a href="javascript:void(0);"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM15.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div> -->
+
+            <!-- <div class="carousel-item">
+     <a href="/SIH2022Warning"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM16.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div>  -->
+
+            <!-- <div class="carousel-item">
+     <a href="https://sih.gov.in/sih2022PS" target="_blank"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM3.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div>  -->
+
+            <!-- <div class="carousel-item">
+      <img src="https://www.sih.gov.in/img1/slider/sliderbannerM4.jpg" alt="Slide One" width="1100" height="500">
+    </div> -->
+
+            <!-- <div class="carousel-item">
+     <a href="#" > <img src="https://www.sih.gov.in/img1/slider/sliderbannerM10.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div> -->
+
+            <!-- <div class="carousel-item">
+     <a href="https://sih.gov.in/signin" target="_blank"> <img src="https://www.sih.gov.in/img1/slider/sliderbannerM13.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div> -->
+
+
+
+
+
+            <!-- <div class="carousel-item">
+     <a href="/signin" > <img src="https://www.sih.gov.in/img1/slider/sliderbannerM6.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div> -->
+
+            <!-- <div class="carousel-item">
+     <a href="/partner" > <img src="https://www.sih.gov.in/img1/slider/sliderbannerM5.jpg" alt="Slide One" width="1100" height="500"> </a>
+    </div> -->
+
+            <!-- <div class="carousel-item">
+      <img src="https://www.sih.gov.in/img1/slider/sliderbannerM8.jpg" alt="Slide One" width="1100" height="500">
+    </div> -->
+
+            <!-- <div class="carousel-item">
+      <img src="https://www.sih.gov.in/img1/slider/sliderbannerM7.jpg" alt="Slide One" width="1100" height="500">
+    </div> -->
+
+
+
+        </div>
+
+        <a class="carousel-control-prev bannerSlide" href="#demo" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+
+        </a>
+        <a class="carousel-control-next bannerSlide" href="#demo" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+        </a>
+
+        <!-- Left and right controls -->
+    </div>
+    <!-- <span class="newSpan"><i class="fa fa-bell" aria-hidden="true"></i> </span> -->
+
+    <marquee scrolldelay="0" id='scroll_news'
+        style="font-family:Book Antiqua; font-weight: bold; color: #FFFFFF; padding: 10px 0 5px 0; background: #000000;"
+        bgcolor="#394787">
+        <div onMouseOver="document.getElementById('scroll_news').stop();"
+            onMouseOut="document.getElementById('scroll_news').start();">
+
+            <a href="" target="_blank"><img src="https://www.sih.gov.in/img1/slider/new.gif" class="newGIFImg1">Updated
+                Curriculum will be displayed from October 1</a> |
+
+            <a href="http://bit.ly/SIH23EVAL" target="_blank"><img src="https://www.sih.gov.in/img1/slider/new.gif"
+                    class="newGIFImg1">Feedback Forms for Curriculum Design are Open</a> |
+
+            <!-- <a href="https://sih.gov.in/pdf/SIH-SOFTWARE-RESULT.pdf" target="_blank"><img src="https://www.sih.gov.in/img1/slider/new.gif" class="newGIFImg1">Click here to view SIH Senior 2022 - Grand Finale Winners Software Edition</a> | 
+	
+	<a href="https://sih.gov.in/sih-2022-junior-edition-final-result">Click here to view SIH Junior 2022 - Grand Finale Winners</a> | 
+   <a href="https://sih.gov.in/sih-2022-senior-final-result">Click here to view results for SIH 2022 - HW and SW Edition</a> | <a href="https://sih.gov.in/shortlisted-nodel-centres" target="_BLANK">Click here to view the nodal centres for SIH 2022</a> | <a href="https://sih.gov.in/sih2022-prescreening-result" target="_BLANK"> SIH2022 - Pre Screening Final Batch Result is declared</a> | <a href="https://sih.gov.in/sih2022-prescreening-result-Jr" target="_BLANK"> SIH2022 - Pre Screening SIH Junior Result is declared</a>  | <a href="https://sih.gov.in/sih2022PS" target="_BLANK"> <i class="fa fa-bell" aria-hidden="true"></i>
+ The problem statements for SIH 2022 is now live. Please click here to see the problem statements.</a> -->
+        </div>
+    </marquee>
+
+    <!-- 
+<marquee scrolldelay="50" id='scroll_news' style="font-family:Book Antiqua; font-weight: bold; color: #FFFFFF; padding: 10px 0; background: #000000;" bgcolor="#394787" ><div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();">
+    <a href="https://forms.gle/2AZ1nHmxUTjrGjv38" target="_BLANK"><img src="https://www.sih.gov.in/img1/slider/new.gif" class="newGIFImg"> Nodal Center Nomination link</a> | &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.sih.gov.in/letters/Nodal-Center-Organizer-Manual-and-Guidelines.pdf" target="_BLANK"> Nodal Center Guidelines</a> 
+
+</div></marquee> -->
+
+    <!-- <marquee scrolldelay="50" id='scroll_news' style="font-family:Book Antiqua; font-weight: bold; color: #FFFFFF; padding: 10px 0; background: #000000;" bgcolor="#394787" ><div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();"><a href="https://sih.gov.in/signin" target="_BLANK"><img src="https://www.sih.gov.in/img1/slider/new.gif" class="newGIFImg"> Idea Submission Started. Kindly click here to register.</a> </div></marquee> -->
+
+    <!-- Latest Marquee Start <marquee scrolldelay="50" id='scroll_news_ps' style="font-family:Book Antiqua; font-weight: bold; color: #FFFFFF; padding: 10px 0; background: #303c75;" bgcolor="#394787" ><div onMouseOver="document.getElementById('scroll_news_ps').stop();" onMouseOut="document.getElementById('scroll_news_ps').start();"><a href="https://sih.gov.in/sih2022PS" target="_BLANK"> The problem statements for SIH 2022 is now live. Please click here to see the problem statements.</a> </div></marquee> Latest Marquee End -->
+
+    <!-- <marquee scrolldelay="50" id='scroll_news' style="font-family:Book Antiqua; font-weight: bold; color: #FFFFFF; padding: 10px 0; background: #f75701;" bgcolor="#394787" ><div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();"><a href="https://sih.gov.in/collegeRegistration" target="_BLANK"> SPOC registration is now open for Colleges. Kindly click here to register.</a> </div></marquee> -->
+
+    <!-- <marquee scrolldelay="50" id='scroll_news_school' style="font-family:Book Antiqua; font-weight: bold; color: #FFFFFF; padding: 10px 0; background: #006924;" bgcolor="#394787" ><div onMouseOver="document.getElementById('scroll_news_school').stop();" onMouseOut="document.getElementById('scroll_news_school').start();"><a href="https://sih.gov.in/schoolRegistration" target="_BLANK"> SPOC registration is now open for Schools. Kindly click here to register.</a> </div></marquee> -->
+
+
+    <!-- <marquee class="marqSIH" scrolldelay="50" id='scroll_news'  style="font-family:Book Antiqua;font-weight: bold;color: #FFFFFF;padding: 10px 0;background: #f75701;font-size: 42px;height: 80px;" bgcolor="#394787"><div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();">SIH website will be down for maintenance purpose from 06:00 PM (8th April 2022) to 06:00 PM (9th April 2022).</div></marquee> -->
+
+    <section class="topbannerPS">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-12">
+				<div class="psBox">
+					<a href="https://www.sih.gov.in/sih2022PS"><h2>Click here to view the <span>Problem Statements</span> submitted by various Ministries, Departments and Organizations.</h2></a>
+				</div>
+			</div> -->
+                <!-- <div class="col-md-12" style="padding-bottom:30px;">
+				<div class="allResultPSBox">
+					<div class="row">						
+						<div class="col col2 bdr-right">
+							<a href="https://sih.gov.in/pdf/Results for SIH 2022 - Hardware Edition.pdf" target="_blank">
+								<div class="topViewBox"><i class="fa fa-eye" aria-hidden="true"></i> View <img src="https://www.sih.gov.in/img1/slider/new.gif" class="newGIFImgcomingSoon"> </div>
+								<div class="topViewContent">Result for SIH 2022 Grand Finale - Hardware Edition</div>
+							</a>
+						</div>
+						<div class="col col2 bdr-right">
+							<a href="https://sih.gov.in/pdf/SIH-SOFTWARE-RESULT.pdf" target="_blank">
+								<div class="topViewBox"><i class="fa fa-eye" aria-hidden="true"></i> View <img src="https://www.sih.gov.in/img1/slider/new.gif" class="newGIFImgcomingSoon"> </div>
+								<div class="topViewContent">Result for SIH 2022 Grand Finale - Software Edition</div>
+							</a>
+						</div>						
+						<div class="col col2 bdr-right">
+							<a href="https://www.sih.gov.in/sih-2022-junior-edition-final-result">
+								<div class="topViewBox"><i class="fa fa-eye" aria-hidden="true"></i> View </div>
+								<div class="topViewContent">Result for SIH 2022 Grand Finale - Junior Edition</div>
+							</a>
+						</div>	
+
+						<div class="col col3">
+							<a href="https://sih.gov.in/pdf/sihwinners.pdf" target="_blank">
+								<div class="topViewBox"><i class="fa fa-eye" aria-hidden="true"></i> View <img src="https://www.sih.gov.in/img1/slider/new.gif" class="newGIFImgcomingSoon"></div>
+								<div class="topViewContent">Winners of all SIH Editions</div>
+								<div class="topViewContent">(2017, 2018, 2019, 2020, 2022)</div>
+							</a>
+						</div>
+						
+					</div>
+				</div>
+			</div> -->
+
+
+                <div class="col-md-12">
+                    <!--<div class="allResultPSBox">
+					<div class="row">
+						<div class="col col1 bdr-right">
+							<a href="https://www.sih.gov.in/sih2023PS">
+								<div class="topViewBox"><i class="fa fa-eye" aria-hidden="true"></i> View</div>
+								<div class="topViewContent">Problem Statements</div>
+							</a>
+						</div>
+						
+						 <div class="col col2 bdr-right">
+							<a href="https://sih.gov.in/sih-2022-senior-final-result">
+								<div class="topViewBox"><i class="fa fa-eye" aria-hidden="true"></i> View  </div>
+								<div class="topViewContent">Finalist teams for SIH 2022 - Hardware &amp; Software Edition</div>
+							</a>
+						</div>
+						
+						<div class="col col4 bdr-right">
+							<a href="https://www.sih.gov.in/shortlisted-nodel-centres">
+								<div class="topViewBox"><i class="fa fa-eye" aria-hidden="true"></i> View </div>
+								<div class="topViewContent">Nodal Centers for SIH 2022</div>
+							</a>
+						</div>
+						
+						<div class="col col5 topMob">
+							<a href="https://www.sih.gov.in/pdf/AWS-TEAM.pdf" target="_BLANK">
+								<div class="topViewBox"><i class="fa fa-eye" aria-hidden="true"></i> View </div>
+								<div class="topViewContent">Teams Shortlisted for AWS credits</div>
+							</a>
+						</div> 
+					</div>
+				</div>-->
+
+                    <!-- <div class="row d-flex justify-content-center"> -->
+                    <!-- <div class="col-sm-6 col-md-6 col-lg-3 dpiitreco-boxflex">
+						<div class="recog-box">
+							<div class="recog-box-img">
+								<img src="/content/dam/invest-india/newhomepage/eligibility.svg?raw=1" title="" alt="">
+							</div>
+							<div class="recog-box-content">
+							<h3>Problem Statements</h3>
+							<a href="https://www.sih.gov.in/sih2023PS"><i class="fa fa-eye" aria-hidden="true"></i> View</a>					
+							</div>
+						</div>
+					</div> -->
+                    <!-- <div class="col-sm-6 col-md-6 col-lg-6 dpiitreco-boxflex">
+						<div class="recog-box">
+							<div class="recog-box-content">
+							<h3>Problem Statements</h3>
+							<a href="https://www.sih.gov.in/sih2023PS"><i class="fa fa-eye" aria-hidden="true"></i> View</a>					
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6 dpiitreco-boxflex">
+						<div class="recog-box">
+							<div class="recog-box-content">
+							<h3>Themes</h3>
+							<a href="https://www.sih.gov.in/SIH2023Themes"><i class="fa fa-eye" aria-hidden="true"></i> View</a>					
+							</div>
+						</div>
+					</div> -->
+                    <!-- <div class="col-sm-6 col-md-6 col-lg-3 dpiitreco-boxflex">
+						<div class="recog-box">
+							<div class="recog-box-img">
+								<img src="/content/dam/invest-india/newhomepage/eligibility.svg?raw=1" title="" alt="">
+							</div>
+							<div class="recog-box-content">
+							<h3>Problem Statements</h3>
+							<a href="https://www.sih.gov.in/sih2023PS"><i class="fa fa-eye" aria-hidden="true"></i> View</a>					
+							</div>
+						</div>
+					</div> -->
+                    <!-- </div>	 -->
+
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="allResultPSBox" style="background-color: transparent !important;">
+                                <div class="row justify-content-center" style="">
+                                    <!--        <div class="col col2 bdr-right">
+                                    <a href="https://sih.gov.in/pdf/Results for SIH 2022 - Hardware Edition.pdf" target="_blank">
+                                        <div class="topViewBox"><i class="fa fa-eye" aria-hidden="true"></i> View <img src="https://sih.gov.in/img1/slider/new.gif" class="newGIFImgcomingSoon"> </div>
+                                        <div class="topViewContent">Result for SIH 2022 Grand Finale - Hardware Edition</div>
+                                    </a>
+                                </div> -->
+                                    <div class="col-md-4 brright pt-3 pb-3 mb-3 mb-md-0"
+                                        style="background-color: #002449 !important; padding: 30px 30px 30px 30px;">
+                                        <a href="https://www.sih.gov.in/sih2023PS" target="_blank">
+                                            <div class="topViewBox">
+                                                <!-- <i class="fa fa-eye" aria-hidden="true"></i> View  -->
+                                                <img src="https://sih.gov.in/img1/slider/new.gif"
+                                                    class="newGIFImgcomingSoon">
+                                            </div>
+                                            <div class="topViewContent">List of AICTE approved Colleges/Universities
+                                            </div>
+                                            <a class="viewButton" href="C:\Users\mishr\Downloads\UPFA\uni_list.html"><i
+                                                    class="fa fa-eye" aria-hidden="true"></i> View</a>
+                                        </a>
+                                    </div>
+                                    <!--div class="col-md-4 pt-3 pb-3" style="background-color: #002449 !important; padding: 30px 30px 30px 30px;border-top-right-radius:10px;border-bottom-right-radius: 10px;">
+                                    <a href="https://www.sih.gov.in/SIH2023Themes" target="_blank">
+                                        <div class="topViewBox">
+                                            <img src="https://sih.gov.in/img1/slider/new.gif" class="newGIFImgcomingSoon">
+                                        </div>
+                                        <div class="topViewContent">List of AICTE approved<br> Medical <br>Colleges/Universities</div>
+                                         <a class="viewButton" href="https://www.sih.gov.in/SIH2023Themes"><i class="fa fa-eye" aria-hidden="true"></i> View</a>
+                                    </a>
+                                </div-->
+
+                                    <!--  <div class="col col3">
+                                    <a href="https://sih.gov.in/pdf/sihwinners.pdf" target="_blank">
+                                        <div class="topViewBox"><i class="fa fa-eye" aria-hidden="true"></i> View <img src="https://sih.gov.in/img1/slider/new.gif" class="newGIFImgcomingSoon"></div>
+                                        <div class="topViewContent">Winners of all SIH Editions</div>
+                                        <div class="topViewContent">(2017, 2018, 2019, 2020, 2022)</div>
+                                    </a>
+                                </div> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="sihJrSenior">
+        <div class="container nsa-video-section">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 nsa-video-ptn">
+                    <!-- <div class="imgSRJr">
+					<img src="https://www.sih.gov.in/img1/jrSrImg.png" alt="">
+				</div> -->
+
+                    <!-- <div class="video-container">
+					<div class="responsive-video">
+						<iframe width="100%" height="350" src="https://www.youtube.com/embed/JHu2YuadxKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div> -->
+
+                    <div class="embed">
+
+                        <div class="embed-link text-center">
+                            <!-- <video class="nsa-video-2023" controls="" poster="https://qasih.mic.gov.in/img1/image-19.png">
+						  <source src="https://www.youtube.com/embed/JHu2YuadxKg" type="video/mp4">
+						</video> -->
+                            <iframe class="nsa-video-2023" width="100%" height="300"
+                                src="C:\Users\mishr\Downloads\UPFA\full_project_vid.mp4" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="srContent">
+                        <h4 style="color:orangered">What’s New in Our Portal</h4>
+                        <br>
+                        <p>The new features and improvements in the AICTE Unified Portal aim to address the following
+                            statement effectively:<br>
+
+                            1. User Registration and Authentication Enhancements<br>
+
+                            2. Enhanced Dashboard and Personalization<br>
+
+                            3. Advanced Curriculum Design Tools<br>
+
+                            4. Expanded Resource Repository<br>
+
+                            5. Robust Collaboration and Feedback Features<br>
+
+                            6. Comprehensive Analytics and Reporting<br>
+
+                            7. Timely Notifications and Updates<br>
+
+                            8. Improved Scalability and Security Measures<br>
+
+
+                        </p>
+                    </div>
+
+
+
+                    <!--div class="srContent">
+					<h5>WHO CAN PARTICIPATE?</h5>
+				</div-->
+
+                    <!--div class="row">
+					<!-- <div class="col-md-6">
+						<div class="headingSR">
+							<img src="https://www.sih.gov.in/img1/sihJuniorIcon.png" alt="">
+							<h2>SIH Junior(Jr)</h2>
+							<p>School students from 6th to 12th class will be able to showcase their talent and generate out-of-the-box open innovation ideas</p>
+						</div>
+					</div> -->
+
+                    <!--div class="col-md-6 col-sm-6 pr-0 regul-align-items">
+						<div class="funding-box">
+							<div class="row">
+								<div class="col-md-8"><h5>SIH Junior(Jr)</h5></div>
+								<div class="col-md-4"><span><img src="https://www.sih.gov.in/img1/sihJuniorIcon.png" alt=""></span></div>								
+							</div>
+							<p>School students from 6th to 12th class will be able to showcase their talent and generate out-of-the-box open innovation ideas</p>
+							<!-- <a href="#" target="_blank">Know more</a> -->
+                </div>
+                </div-->
+
+                <!--div class="col-md-6 col-sm-6 pr-0 regul-align-items">
+						<div class="funding-box">
+							<div class="row">
+								<div class="col-md-8"><h5>SIH Senior(Sr)</h5></div>
+								<div class="col-md-4"><span><img src="https://www.sih.gov.in/img1/sihSeniorIcon.png" alt=""></span></div>								
+							</div>
+							<p>Regular Students of HEI's pursuing "Graduate/Post-Graduate/Ph.D" will be able to showcase their talent and generate out-of-the-box open innovation ideas</p>
+							<!-- <a href="#" target="_blank">Know more</a> -->
+            </div>
+            </div-->
+
+
+
+
+            <!-- <div class="col-md-6">
+						<div class="headingSR">
+							<img src="https://www.sih.gov.in/img1/sihSeniorIcon.png" alt="">
+							<h2>SIH Senior(Sr)</h2>
+							<p>Regular Students of HEI's pursuing "Graduate/Post-Graduate/Ph.D" will be able to showcase their talent and generate out-of-the-box open innovation ideas</p>
+						</div>
+					</div> -->
+            </div-->
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--<div class="center">
+				<div class="srContent">
+					<h2 social class="h"> <a href="https://www.sih.gov.in/sih2022PS">View the Problem Statements for SIH 2022</a></h2>
+				</div>
+</div> -->
+
+
+    <!--
+
+<section class="total-statement">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="statement-box">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="https://www.sih.gov.in/img1/azaadi-amrit-mahotsav.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                               
+				<h3>Problem Statements recieved so far</h3>
+                            <p>As per available data</p>
+
+                           
+                        </div>
+                        <div class="col-md-3">
+                            <div class="soft">
+                                <h3>239</h3>
+                                <p>Problem Statement</p>                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+-->
+
+
+
+    <script>
+        function showCentral() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("participating_central");
+            var oldText = document.getElementById("participating_central_old");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "flex";
+                btnText.innerHTML = "View more";
+                moreText.style.display = "none";
+                oldText.style.display = "flex";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "flex";
+                oldText.style.display = "none";
+            }
+        }
+
+        function showState() {
+            var dots = document.getElementById("dotsState");
+            var moreText = document.getElementById("participating_state");
+            var oldStText = document.getElementById("participating_state_old");
+            var btnText = document.getElementById("myBtnState");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "flex";
+                btnText.innerHTML = "View more";
+                moreText.style.display = "none";
+                oldStText.style.display = "flex";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "flex";
+                oldStText.style.display = "none";
+            }
+        }
+
+        function showOrganization() {
+            var dots = document.getElementById("dotsOrganization");
+            var moreText = document.getElementById("participating_organization");
+            var oldOrText = document.getElementById("participating_organization_old");
+            var btnText = document.getElementById("myBtnOrganization");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "flex";
+                btnText.innerHTML = "View more";
+                moreText.style.display = "none";
+                oldOrText.style.display = "flex";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "flex";
+                oldOrText.style.display = "none";
+            }
+        }
+
+    </script>
+
+    <div id="block-mapofdirectorateofhighereducation"
+        class="block block-block-content block-block-contentbcf6c41b-356a-4ead-86bf-ff748f56520d"
+        style="margin-left: 400px;">
+
+        <h4 style="color:orangered">Map of all AICTE approved colleges/universities</h4>
+
+
+        <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"
+            style="margin-left:-400px;">
+            <p><iframe allowfullscreen="" height="300" width="1280" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d27996.97483802676!2d77.12635008845409!3d28.700956272997043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBTE%20Complex%2C%20Muni%20Maya%20Ram%20Marg%2C%20Pitampura%2C%20Delhi-110034%20map!5e0!3m2!1sen!2sin!4v1662552085567!5m2!1sen!2sin"></iframe>
+            </p>
+        </div>
+
+    </div>
+
+
+    <footer style="padding-top:40px;">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="follow-box">
+                        <h3>Follow Us</h3>
+                        <ul class="follow-box-copyright">
+                            <li><a href=# target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=# target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href=# target="_blank"><i class="fa fa-twitter"></i></a></li>
+
+
+                        </ul>
+                        <p style="margin-top: 15px;">© 2023-24 Team Bytecode. All rights reserved</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="follow-box flo-box">
+                        <h3>Contact Us</h3>
+                        <ul class="follow-box-contact">
+                            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="+91 7608820376">+91
+                                    7608820376</a></li>
+                            <li><i class="fa fa-envelope"></i> Email: <a
+                                    href="teambytecode@gmail.com">teambytecode@gmail.com</a></li>
+                            <li class="app-down" style="display: none;"><i class="fa fa-download"></i> <a
+                                    href="https://play.google.com/store/apps/details?id=com.psl.sihapps&amp;hl=en">Smart
+                                    India Hackathon App Download</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Registration in Modal -->
+    <div class="modal fade" id="Registeration_type_modal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Select Registration Type</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="logo-modal">
+                                <img src="C:\Users\mishr\Downloads\UPFA\Logo.png" class="img-responsive" alt="Logo">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="content-modal">
+
+                                <div class="form-group">
+                                    <input style="transform:scale(1.3);" type="radio" name="User_Register_Type"
+                                        value="igottwo" onclick="SendUserToItsPage(2)">
+                                    <span class="sign_up_type" style="color:#03132E">College Faculty SPOC</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <input style="transform:scale(1.3);" type="radio" name="User_Register_Type"
+                                        value="igottwo" onclick="SendUserToItsPage(6)">
+                                    <span class="sign_up_type" style="color:#03132E">School Faculty SPOC</span>
+                                </div>
+
+
+                                <div class="form-group" style="display: none;">
+                                    <input style="transform:scale(1.3);" type="radio" name="User_Register_Type"
+                                        value="igottwo" onclick="SendUserToItsPage(2)">
+                                    <span class="sign_up_type" style="color:#03132E">College Faculty SPOC</span>
+                                </div>
+                                <div id="div1" style="display: none;">
+                                    <input style="transform:scale(1.3);" type="radio" value="2"
+                                        name="User_Register_Type" onclick="SendUserToItsPage(2)">
+                                    <span class="sign_up_type" style="color:orange;">Existing Users</span> &nbsp;
+                                    <input style="transform:scale(1.3);" type="radio" value="2"
+                                        name="User_Register_Type" onclick="SendUserToItsPage(2)">
+                                    <span class="sign_up_type" style="color:orange;">New Users</span><br>
+                                    <span class="" style="color:red; font-size: 12px;">(*Please check your mail for OTP
+                                        Verification)</span>
+                                </div>
+                                <div class="form-group" style="display:none;">
+                                    <input style="transform:scale(1.3);" type="radio" name="User_Register_Type"
+                                        value="4" onclick="SendUserToItsPage(4)">
+                                    <span class="sign_up_type" style="color:#03132E">Design Mentors</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modClose" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <a id="button"></a>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://www.sih.gov.in/js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://www.sih.gov.in/js/slick.min.js"></script>
+    <script type="text/javascript" src="https://www.sih.gov.in/js/bs_leftnavi.js"></script>
+    <script type="text/javascript" src="https://www.sih.gov.in/js/script-mobile-menu.js"></script>
+
+
+
+    <script type="text/javascript">
+
+        function show2() {
+            $('#div1').css('display', 'block');
+        }
+
+        function SendUserToItsPage(input) {
+            switch (input) {
+                case 1:
+                    window.open("https://www.sih.gov.in/signup", "_self");
+                    break;
+
+                case 2:
+                    window.open("https://www.sih.gov.in/collegeRegistration", "_self");
+                    break;
+
+
+                case 3:
+                    window.open("https://www.sih.gov.in/studentRegistration", "_self");
+                    break;
+
+                case 4:
+                    window.open("https://www.sih.gov.in/designmregistration", "_self");
+                    break;
+
+                case 5:
+                    window.open("https://www.sih.gov.in/juryregistration", "_self");
+                    break;
+
+                case 6:
+                    window.open("https://www.sih.gov.in/schoolRegistration", "_self");
+                    break;
+            }
+        }
+
+        jQuery(document).ready(function ($) {
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                responsive: [{
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+
+        jQuery(document).ready(function ($) {
+            $('.sliderIndex').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+                responsive: [{
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+
+        jQuery(document).ready(function ($) {
+            $('.ministryDetails').slick({
+                dots: false,
+                infinite: true,
+                speed: 200,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+                responsive: [{
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+
+        jQuery(document).ready(function ($) {
+            $('.slider1').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+                responsive: [{
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+
+        jQuery(document).ready(function ($) {
+            $('.slider2').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+                responsive: [{
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+
+        jQuery(document).ready(function ($) {
+            $('.videoPrototypesSlide').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+                responsive: [{
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+
+        $(document).on("scroll", function () {
+            if
+                ($(document).scrollTop() > 86) {
+                $("#banner").addClass("shrink");
+            }
+            else {
+                $("#banner").removeClass("shrink");
+            }
+        });
+
+        /* stop header code start */
+
+        $(window).scroll(function () {
+            console.log($(window).scrollTop())
+            if ($(window).scrollTop() > 63) {
+                $('.navbar').addClass('navbar-fixed');
+            }
+            if ($(window).scrollTop() < 64) {
+                $('.navbar').removeClass('navbar-fixed');
+            }
+        });
+
+        /* stop header code end */
+
+        /* slider add class code start */
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#demo').addClass('carouselPadding');
+            } else {
+                $('#demo').removeClass('carouselPadding');
+            }
+        });
+
+        /* slider add class code end */
+
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+
+        jQuery(document).ready(function ($) {
+            $('.twitterSlider').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+                responsive: [{
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+
+        $(function () {
+            $(".like").click(function () {
+                var input = $(this).find('.qty1');
+                input.val(parseInt(input.val()) + 1);
+
+            });
+            $(".dislike").click(function () {
+                var input = $(this).find('.qty2');
+                input.val(input.val() - 1);
+            });
+        });
+
+        $('.autoplay').slick({
+            slidesToShow: 3,
+            infinite: true,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+        $(document).ready(function () {
+            $(".testimonial-carousel").slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                arrows: true,
+                prevArrow: $(".testimonial-carousel-controls .prev"),
+                nextArrow: $(".testimonial-carousel-controls .next")
+            });
+        });
+
+    </script>
+
+
+
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // $('#smallLogo').hide();
+            $('#scrollLogo').hide();
+            $('#scrollnav').hide();
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 70) {
+                    // $('#smallLogo').show();
+                    // $('#smallLogo').addClass('showlogo');
+
+                    $('nav.navbar.navbar-expand-md.navbar-dark.navbar-fixed.shrink .dropdown-menu').css({ top: '49px', });
+                    $('#scrollLogo').show();
+                    $('div#collapsibleNavbar').css({ padding: '20px 0 0 0' })
+                    $('.navbar-fixed').css({ paddingBottom: '6px' });
+                    $('#lastLogo').css({ width: '150px' })
+                    $('#scrollLogo').css({ width: '75% !important' });
+                    $('#scrollnav').show();
+                } else {
+                    $('#scrollLogo').hide();
+                    $('nav.navbar.navbar-expand-md.navbar-dark.navbar-fixed.shrink .dropdown-menu').css({ top: '39px', });
+                    $('#scrollnav').hide();
+                    // $('#smallLogo').hide();
+                    // $('#smallLogo').removeClass('showlogo');
+                }
+            })
+
+
+            $('#readMorecnt').hide();
+            $('#moreShow').click(function () {
+                $('#readMorecnt').toggle();
+            })
+
+        });
+    </script>
+</body>
+
+</html>
